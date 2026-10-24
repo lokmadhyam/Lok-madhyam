@@ -156,10 +156,14 @@ export const GetInvolvedPortal: React.FC<GetInvolvedPortalProps> = ({ submission
           <div className="lg:col-span-5 space-y-6">
             <div className="bg-blue-900 text-white rounded-2xl p-6 shadow-sm">
               <h3 className="text-lg font-bold text-orange-400 mb-3 flex items-center gap-2">
-                <Landmark className="w-5 h-5" />
-                <span>Direct Bank Transfer (80G / FCRA)</span>
+              {/* Bank details hide so we comment */}
+                {/* <Landmark className="w-5 h-5" /> */}
+                {/* <span>Direct Bank Transfer (80G / FCRA)</span> */}
+
+                <span>Notification Lists</span>
+
               </h3>
-              <p className="text-xs text-blue-100 mb-4">All donations are tax-exempt under Section 80G (URN: AAATL3903FF20212, PAN: AAATL3903F).</p>
+              {/* <p className="text-xs text-blue-100 mb-4">All donations are tax-exempt under Section 80G (URN: AAATL3903FF20212, PAN: AAATL3903F).</p>
               <div className="space-y-3 text-xs">
                 {BANK_ACCOUNTS.map((b, idx) => (
                   <div key={idx} className="bg-blue-950/70 p-3 rounded-xl border border-blue-800">
@@ -168,7 +172,7 @@ export const GetInvolvedPortal: React.FC<GetInvolvedPortalProps> = ({ submission
                     <div className="text-blue-200 font-mono mt-1">A/C: {b.accountNo} • IFSC: {b.ifsc}</div>
                   </div>
                 ))}
-              </div>
+              </div> */}
             </div>
 
             <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
@@ -199,6 +203,7 @@ export const GetInvolvedPortal: React.FC<GetInvolvedPortalProps> = ({ submission
               )}
             </div>
           </div>
+          
         </div>
 
         <div className="text-center">

@@ -205,7 +205,7 @@ export const AnnualReport: React.FC<AnnualReportProps> = ({
               <h4 className="text-xl md:text-2xl font-bold text-blue-900 flex items-center gap-2">
                 <BarChart3 className="w-6 h-6 text-orange-600" />
                 <span>
-                  Interactive Analytics: 2025–2026 Impact & Financials
+                  Interactive Analytics: 2025–2026 Impact
                 </span>
               </h4>
               <p className="text-sm text-gray-600 mt-1">
