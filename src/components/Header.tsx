@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Phone, Mail, ExternalLink, Menu, X, HandHeart } from 'lucide-react';
+import logoImg from "../image_List/facIcon.jpg";
 
 interface HeaderProps {
   currentPage: string;
@@ -44,9 +45,15 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, navigateTo, openAct
 
       <div className="container mx-auto max-w-6xl px-4 py-3.5 flex justify-between items-center">
         <button type="button" onClick={() => handleNavClick('home')} className="text-left group focus:outline-none cursor-pointer flex items-center gap-3">
-          <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-orange-600 to-orange-500 text-white flex items-center justify-center font-extrabold text-xl shadow-sm group-hover:scale-105 transition-transform">
+          {/* <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-orange-600 to-orange-500 text-white flex items-center justify-center font-extrabold text-xl shadow-sm group-hover:scale-105 transition-transform">
             LM
-          </div>
+          </div> */}
+          <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-orange-600 to-orange-500 text-white flex items-center justify-center font-extrabold text-xl shadow-sm group-hover:scale-105 transition-transform overflow-hidden">
+            <img 
+                src={logoImg} 
+                alt="Logo" 
+                className="w-full h-full object-cover"/>
+            </div>
           <div>
             <span className="block text-2xl md:text-3xl font-extrabold text-orange-600 tracking-wide leading-none">
               LOK MADHYAM
